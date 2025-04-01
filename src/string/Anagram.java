@@ -15,7 +15,7 @@ public class Anagram {
         Arrays.sort(chararr1);
         Arrays.sort(chararr2);
 
-        if (String.valueOf(chararr1).equals(String.valueOf(chararr2))){
+        if (String.valueOf(chararr1).equalsIgnoreCase(String.valueOf(chararr2))){
             System.out.println("it is anagram");
             return  true;
         }  else {
@@ -24,6 +24,6 @@ public class Anagram {
         return false;
     }
     public static void main(String[] args) {
-        anagramfind("grab","brad");
+        anagramfind("GRAB","brag");
     }
 }
