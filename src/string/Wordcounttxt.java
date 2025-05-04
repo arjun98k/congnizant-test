@@ -15,6 +15,7 @@ public class Wordcounttxt {
             count += word.length;
         }
         System.out.println("the number of word present in given file:  "+ count);
+        System.out.println("hii");
         br.close();
     }
 }
