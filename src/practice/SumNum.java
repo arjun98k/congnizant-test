@@ -15,6 +15,6 @@ public class SumNum {
         return sum;
     }
     public static void main(String[] args) {
-        System.out.println(Sumnumm(123));
+        System.out.println(Sumnumm(1234));
     }
 }
