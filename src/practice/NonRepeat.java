@@ -1,7 +1,7 @@
 package practice;
 
 public class NonRepeat {
-    public static int repeatele(int arr[] , int n ){
+    public static int nonrepeatele(int arr[] , int n ){
         for (int i = 0; i < n ; i++) {
             boolean isDuplicate = false;
             for (int j = 0; j < n ; j++) {
@@ -19,11 +19,27 @@ public class NonRepeat {
 
 
     }
+    public static int repeate(int arr[] , int n ){
+        for (int i = 0; i < n ; i++) {
+            boolean isDuplicate = false;
+            for (int j = 0; j < n ; j++) {
+                if (i !=j  && arr[i] == arr[j]){
+                   return arr[i];
+                }
+
+            }
+
+        }
+        return  -1;
+
+
+    }
 
     public static void main(String[] args) {
-        int arr[] = {-1, 2, -1, 3, 0};
+        int arr[] = {0, 2, 0, 3, 0};
         int n = arr.length;
 
-        System.out.print(repeatele(arr,n));
+        System.out.println(nonrepeatele(arr,n));
+        System.out.println(repeate(arr,n));
     }
 }
